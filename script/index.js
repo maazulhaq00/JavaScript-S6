@@ -1,0 +1,1 @@
+document.write("<p>This script is from separate file</p>")
