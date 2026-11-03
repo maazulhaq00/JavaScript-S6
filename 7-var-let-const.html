@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Learning var, let & const</h1>
+
+    <script>
+
+        // var num1 = 13;
+
+        // var name; // variable declaration
+        // name = "Maaz Ul Haq" // variable assignment
+
+        // var name = "Maaz Ul Haq"
+
+        // var name; 
+        // name = "Maaz Ul Haq" 
+        // document.write(name)
+
+        // name = "Abeer"
+        // document.write(name)
+
+        // hoisting
+
+        var a = 13
+        var a = "Maaz" // redeclaration
+
+        console.log(a)
+
+        let b = 77
+        // let b = "apple" // can not redeclare
+
+        console.log(b)
+
+        {
+            let age = 33 // block scope
+
+            console.log(age) // yaha access hoga
+        }
+
+        // console.log(age) // yaha access nhi hoga
+
+        {
+            var favColor = "purple"
+
+            console.log(favColor)
+        }
+        console.log(favColor)
+
+        const PI = 3.1427
+        console.log(PI)
+
+        // PI = "hey" // can not reassign
+        console.log(PI)
+    </script>
+</body>
+
+</html>
