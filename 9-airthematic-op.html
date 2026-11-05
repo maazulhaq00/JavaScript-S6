@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter Number 1:
+        <input type="number" id="num1">
+    </label><br>
+    <label>Enter Number 2:
+        <input type="number" id="num2">
+    </label><br>
+
+    <button onclick="calculate()" >Operate</button>
+
+    <div id="result">
+
+    </div>
+
+
+    <script>
+
+        function calculate() {
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+
+            let a = Number(num1)
+            let b = Number(num2)
+
+            let result = a ** b
+
+            document.getElementById("result").innerHTML = "The output is " + result
+            
+            // console.log(num1)
+            // console.log(typeof(num1))
+            // console.log(num2)
+            // console.log(typeof(num2))
+        }
+
+    </script>
+
+</body>
+
+
+</html>
