@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h3>Area Calculator</h3>
+
+    <label for="">
+        Enter Area
+        <input type="number" id="area">
+    </label>
+
+    <button onclick="calculateArea()">Calculate Area</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function power(num1, num2) {
+
+            let result = num1 ** num2 // 9
+
+            return result
+
+        }
+
+        function calculateArea() {
+            const PI = 3.142
+            let radius = Number(document.getElementById("area").value)
+
+            // console.log(power(radius, 2))
+            // console.log(PI * power(radius, 2))
+
+            let area = PI * power(radius, 2)
+
+            document.getElementById("result").innerHTML = "The area is " + area + " cm2"
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

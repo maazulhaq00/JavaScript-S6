@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>
+        Enter Age
+        <input type="number" id="age" > <br>
+    </label>
+    <button onclick="checkAge()">Find Out</button>
+
+    <p id="output"></p>
+
+    <script>
+        function checkAge(){
+
+            let age = Number(document.getElementById("age").value)
+
+            // age >= 18 ? 
+            // console.log("You are eligible to vote") : 
+            // console.log("You are not eligible to vote")
+
+            let op = age >= 18 ? "eligible to vote" : "not eligible to vote"
+
+            document.getElementById("output").innerHTML = op
+        }
+    </script>
+</body>
+</html>
