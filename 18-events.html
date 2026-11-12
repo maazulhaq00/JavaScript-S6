@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            background-color: yellow;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="mypara" onclick="maazclicks()" onmouseenter="maazenters()" onmouseout="maazouts()" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deleniti sapiente magni quibusdam exercitationem sequi dolore, ab nihil ipsam eveniet repellendus! Veniam deleniti doloremque rem necessitatibus voluptatum velit similique eos.</p>
+
+    <input type="text" name="name" id="name" onchange="inputValueChanges()" onkeydown="inputValueChanges()">
+    
+
+</body>
+
+<script>
+    function maazclicks(){
+        console.log("Maaz has clicked on para")
+    }
+    function maazenters(){
+        console.log("Maaz has entered the para")
+
+        document.getElementById("mypara").style.backgroundColor = "black"
+        document.getElementById("mypara").style.color = "white"
+
+    }
+    function maazouts(){
+        console.log("Maaz has gone out of para")
+        document.getElementById("mypara").style.backgroundColor = "yellow"
+        document.getElementById("mypara").style.color = "black"
+    }
+    function inputValueChanges(){
+        console.log("Koi input mai type kr raha haai...")
+    }
+</script>
+
+
+</html>

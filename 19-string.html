@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Learning string</h3>
+
+    <script>
+        let name = "Maaz Ul Haq"
+
+        console.log(name)
+        console.log(name.length)
+
+        let text1 = "My fav pet is cat. My cat name is Tom."
+
+        console.log(text1.slice(7,10))
+
+        let text2 = text1.replace("cat", "parrot")
+        console.log(text2)
+
+        let text3 = text1.replaceAll("cat", "parrot")
+        console.log(text3)
+
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+
+        let newtext = text2.concat(text3)
+        console.log(newtext)
+
+        console.log(name[0])
+        console.log(name[8])
+
+        let nameArr = name.split(" ")
+        console.log(nameArr)
+
+        let fav = "My fav fruite is banana, guava, orange, mango and cherry."
+        let favArr = fav.split(",")
+        console.log(favArr)
+    </script>
+</body>
+</html>

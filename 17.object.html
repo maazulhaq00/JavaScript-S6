@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Learning Objects</h3>
+
+    <script>
+        
+        let student1 = {
+            name: "Shalan",
+            age: 18,
+            standard: "8th",
+            contact: "03121234567",
+            printInfo: function () {
+
+                document.write(`<p>Student name is ${this.name}. He is ${this.age} year old. He is in ${this.standard} class. His contact is ${this.contact}.</p>`)
+            }
+        }
+        
+        let student2 = {
+            name: "Kanniel",
+            age: 17,
+            standard: "9th",
+            contact: "03121234599",
+            printInfo: function () {
+
+                document.write(`<p>Student name is ${this.name}. He is ${this.age} year old. He is in ${this.standard} class. His contact is ${this.contact}.</p>`)
+            }
+        }
+
+
+        student1.printInfo()
+        student2.printInfo()
+
+    </script>
+</body>
+</html>
